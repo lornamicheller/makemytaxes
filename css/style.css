@@ -72,7 +72,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: rgb(255, 16, 16); 
+  background: rgb(255, 16, 16);
 }
 
 .fa-phone {
@@ -87,6 +87,17 @@ nav h1 {
   font-family: 'Times New Roman', Times, serif;
 }
 
+.menu-toggle {
+  color: rgb(0, 0, 0);
+  background: #ffffff00;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  padding-top: 20px;
+}
+
 .landing-picture {
   width: 100%;
   height: 800px;
@@ -96,20 +107,25 @@ nav h1 {
 }
 
 .landing-picture h1 {
+  padding-top: 170px;
+  margin-right: 30px;
+  text-align: right;
   font-size: 40px;
   color: rgb(255, 16, 16);
-  padding-top: 190px;
-  padding-left: 1050px;
   font-weight: bolder;
-  margin-right: 40px;
 }
 
 .landing-picture h2 {
+  margin-right: 30px;
+  text-align: right;
   font-size: 40px;
-  padding-left: 1055px;
   color: rgb(255, 16, 16);
   font-weight: bolder;
-  margin-right: 40px;
+}
+
+.landing-picture h2 {
+  color: rgb(255, 16, 16);
+  font-weight: bolder;
 }
 
 .let-us-help {
@@ -135,7 +151,7 @@ nav h1 {
 .tax-levi {
   margin: auto;
   width: 300px;
-  height: auto;
+  height: 400px;
   text-align: justify;
   line-height: 20px;
 }
@@ -144,14 +160,13 @@ nav h1 {
   font-size: 20px;
   font-weight: 700;
   color: rgb(0, 0, 0);
-  padding: 0;
   padding-bottom: 30px;
 }
 
 .tax-debt-relief {
   margin: auto;
   width: 300px;
-  height: auto;
+  height: 400px;
   text-align: justify;
   line-height: 20px;
 }
@@ -160,14 +175,13 @@ nav h1 {
   font-size: 20px;
   font-weight: 700;
   color: rgb(0, 0, 0);
-  padding: 0;
   padding-bottom: 30px;
 }
 
 .tax-problem {
   margin: auto;
   width: 300px;
-  height: auto;
+  height: 400px;
   text-align: justify;
   line-height: 20px;
 }
@@ -176,7 +190,6 @@ nav h1 {
   font-size: 20px;
   font-weight: 700;
   color: rgb(0, 0, 0);
-  padding: 0;
   padding-bottom: 30px;
 }
 
@@ -190,7 +203,7 @@ nav h1 {
 .innocent-spouse {
   margin: auto;
   width: 300px;
-  height: auto;
+  height: 400px;
   text-align: justify;
   line-height: 20px;
 }
@@ -205,7 +218,7 @@ nav h1 {
 .transcript-analysis {
   margin: auto;
   width: 300px;
-  height: auto;
+  height: 400px;
   text-align: justify;
   line-height: 20px;
 }
@@ -216,3 +229,146 @@ nav h1 {
   color: rgb(0, 0, 0);
   padding-bottom: 30px;
 }
+
+
+/* mobile styles */
+@media(max-width: 580px) {
+
+  /* nav-bar */
+  header {
+    padding: 0 20px;
+    background: #ffffff;
+  }
+
+  header .logo {
+    color: white;
+    margin-top: 0;
+  }
+
+  .logo {
+    width: 250px;
+    background: url("../images/logo.png") no-repeat;
+    background-size: 150px;
+    background-position: left;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    top: 60px;
+    left: -100%;
+    transition: 0.5s;
+    display: block;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  header nav ul li {
+    background: rgb(255, 255, 255);
+  }
+
+  header nav ul li a {
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid #3e3e3e00;
+  }
+
+  .fa-phone {
+    display: none;
+  }
+
+  nav h1 {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+  }
+
+  /* landing picture styles */
+
+  .landing-picture h1 {
+    color: rgb(255, 255, 255);
+    padding-top: 400px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .landing-picture h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+  }
+
+  /* let us help section */
+
+  .let-us-help h1 {
+    font-size: 40px;
+  }
+
+  .first-section-content {
+    display: block;
+  }
+
+  .tax-levi {
+    width: 100%;
+  }
+
+  .tax-levi h1 {
+    font-size: 30px;
+  }
+
+  .tax-debt-relief {
+    width: 100%;
+  }
+
+  .tax-debt-relief h1 {
+    font-size: 30px;
+  }
+
+  .tax-problem {
+    width: 100%;
+  }
+
+  .tax-problem h1 {
+    font-size: 30px;
+  }
+
+  .second-section-content {
+    display: block;
+    width: 100%;
+  }
+
+  .innocent-spouse {
+    width: 100%;
+  }
+
+  .innocent-spouse h1 {
+    font-size: 30px;
+  }
+
+  .transcript-analysis h1 {
+    font-size: 30px;
+  }
+
+  .transcript-analysis {
+    width: 100%;
+  }
+}
+
+/* tablet styles */
+@media(max-width: 765px) {}
