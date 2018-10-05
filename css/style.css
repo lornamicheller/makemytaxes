@@ -19,7 +19,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0 100px;
+  padding: 0 30px;
   background: #ffffff;
   width: 100%;
   box-sizing: border-box;
@@ -27,24 +27,20 @@ header {
 
 header .logo {
   float: left;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .logo {
-  width: 200px;
-  height: 90px;
+  width: 120px;
+  height: 60px;
   background: url("../images/logo.png");
-  background-size: 200px;
-  background-position: left;
-}
-
-.logo span {
-  margin-left: 60px;
+  background-size: 130px;
+  background-position: top;
 }
 
 header nav {
   float: right;
-  height: 70px;
+  height: auto;
   margin-top: 20px;
   padding-bottom: 40px;
   display: flex;
@@ -52,9 +48,8 @@ header nav {
 
 header nav ul {
   margin: 0;
-  padding: 10px;
+  padding: 15px;
   display: flex;
-  margin-right: 200px;
 }
 
 header nav ul li {
@@ -63,7 +58,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  height: 50px;
+  height: auto;
   line-height: 50px;
   padding: 0 10px;
   color: rgb(0, 0, 0);
@@ -81,7 +76,6 @@ header nav ul li a:hover {
 
 nav h1 {
   padding-top: 30px;
-  margin-left: 10px;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: 'Times New Roman', Times, serif;
@@ -95,7 +89,7 @@ nav h1 {
   font-size: 24px;
   cursor: pointer;
   display: none;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .landing-picture {
@@ -230,6 +224,20 @@ nav h1 {
   padding-bottom: 30px;
 }
 
+/* footer */
+
+footer {
+  padding: 50px;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 100;
+}
+
+footer span {
+  margin: 5px;
+}
 
 /* mobile styles */
 @media(max-width: 580px) {
@@ -246,9 +254,9 @@ nav h1 {
   }
 
   .logo {
-    width: 250px;
+    width: 200px;
     background: url("../images/logo.png") no-repeat;
-    background-size: 150px;
+    background-size: 120px;
     background-position: left;
   }
 
@@ -261,7 +269,7 @@ nav h1 {
     width: 100%;
     height: auto;
     background-color: #ffffff;
-    top: 60px;
+    top: 30px;
     left: -100%;
     transition: 0.5s;
     display: block;
@@ -371,4 +379,146 @@ nav h1 {
 }
 
 /* tablet styles */
-@media(max-width: 765px) {}
+@media(max-width: 900px) {
+
+  /* nav-bar */
+  header {
+    padding: 0 20px;
+    background: #ffffff;
+  }
+
+  header .logo {
+    color: white;
+    margin-top: 0;
+  }
+
+  .logo {
+    width: 200px;
+    background: url("../images/logo.png") no-repeat;
+    background-size: 120px;
+    background-position: left;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    top: 35px;
+    left: -100%;
+    transition: 0.5s;
+    display: block;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  header nav ul li {
+    background: rgb(255, 255, 255);
+  }
+
+  header nav ul li a {
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid #3e3e3e00;
+  }
+
+  .fa-phone {
+    display: none;
+  }
+
+  nav h1 {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+  }
+
+  .first-section-content {
+    width: 100%;
+  }
+
+  /* taxes */
+
+  /* landing picture styles */
+
+  .landing-picture h1 {
+    color: rgb(255, 255, 255);
+    padding-top: 400px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .landing-picture h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+  }
+
+  /* let us help section */
+
+  .let-us-help h1 {
+    font-size: 40px;
+  }
+
+  .first-section-content {
+    display: block;
+  }
+
+  .tax-levi {
+    width: 100%;
+  }
+
+  .tax-levi h1 {
+    font-size: 30px;
+  }
+
+  .tax-debt-relief {
+    width: 100%;
+  }
+
+  .tax-debt-relief h1 {
+    font-size: 30px;
+  }
+
+  .tax-problem {
+    width: 100%;
+  }
+
+  .tax-problem h1 {
+    font-size: 30px;
+  }
+
+  .second-section-content {
+    display: block;
+    width: 100%;
+  }
+
+  .innocent-spouse {
+    width: 100%;
+  }
+
+  .innocent-spouse h1 {
+    font-size: 30px;
+  }
+
+  .transcript-analysis h1 {
+    font-size: 30px;
+  }
+
+  .transcript-analysis {
+    width: 100%;
+  }
+}
